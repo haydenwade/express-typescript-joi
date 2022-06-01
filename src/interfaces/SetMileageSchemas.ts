@@ -9,22 +9,6 @@ export interface ComplexBodySchema {
   x: boolean;
 }
 
-export interface PropertiesSchemaV2 {
-  dateField?: string;
-  distance?: {
-    fromLatitude: number;
-    fromLongitude: number;
-    include: boolean;
-  };
-  page: number;
-  propertyStatus?: string;
-  size: number;
-  sortBy?: string;
-  sortOrder?: string;
-  startDate?: Date;
-  territory?: string;
-}
-
 export interface SetMileageRequestBody {
   mileage: number;
 }

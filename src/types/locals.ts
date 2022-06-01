@@ -1,0 +1,1 @@
+type SetMileageRequestLocals = {vin:string};

@@ -3,14 +3,6 @@
  * Do not modify this file manually
  */
 
-export interface AddBodySchema {
-  a: number;
-}
-
-export interface AddQuerySchema {
-  userId: string;
-}
-
 export interface ComplexBodySchema {
   a?: number;
   b: number;
@@ -31,4 +23,12 @@ export interface PropertiesSchemaV2 {
   sortOrder?: string;
   startDate?: Date;
   territory?: string;
+}
+
+export interface SetMileageRequestBody {
+  mileage: number;
+}
+
+export interface SetMileageRequestQueryParams {
+  userId: string;
 }

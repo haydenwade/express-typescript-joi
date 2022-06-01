@@ -1,13 +1,14 @@
 import Joi from "joi";
 
-export const AddQuerySchema = Joi.object({
+export const SetMileageQuerySchema = Joi.object({
   userId: Joi.string().required(),
-}).meta({className: "AddQuerySchema"});
+}).meta({className: "SetMileageRequestQueryParams"});
 
-export const AddBodySchema = Joi.object({
-  a: Joi.number().required(),
-}).meta({className: "AddBodySchema"});
+export const SetMileageBodySchema = Joi.object({
+  mileage: Joi.number().required(),
+}).meta({className: "SetMileageRequestBody"});
 
+//#region other examples to test generator
 export const ComplexBodySchema = Joi.object({
   a: Joi.number().optional().min(10).max(1000),
   b: Joi.number().required(),
@@ -38,3 +39,4 @@ export const PropertiesSchemaV2 = Joi.object()
       })
   })
   .and('dateField', 'startDate');
+//#endregion

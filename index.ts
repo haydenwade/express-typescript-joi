@@ -55,7 +55,7 @@ const routeHandler  = (req: IAddRequest, res: IAddResponse) => {
 };
 //#endregion
 
-//#region route handler as we do today
+//#region route handler using express typing
 export type AppController<
   RequestPathParams,
   ResponseBody,
